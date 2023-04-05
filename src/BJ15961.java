@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class BJ15961 {
 	
 
 	public static void main(String[] args) throws IOException{
