@@ -2,8 +2,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-
-public class Main{
+/**
+ * 해당 문제에서는 1열에서 M열까지 파이프를 겹치지 않고 연결하는 문제이다.
+ *   
+ * @author SSAFY
+ *
+ */
+public class BJ3109{
 	public static boolean[][] visited;
 	public static boolean[][] list;
 	public static int result=0;
