@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  * @author SSAFY
  *
  */
-public class Main {
+public class BJ14950 {
 
 	static class Node implements Comparable<Node>{
 		int n1;
