@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main{
+public class BJ19238{
 	static class Node{
 		int x;
 		int y;
