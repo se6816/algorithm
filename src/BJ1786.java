@@ -3,8 +3,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
-
-public class Main{
+/**
+ * 해당 문제는 문자열에서 어떤 특정 문자열을 찾는 문제이다.
+ * KMP 알고리즘을 이용하여 풀었다.
+ * @author SSAFY
+ *
+ */
+public class BJ1786{
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
