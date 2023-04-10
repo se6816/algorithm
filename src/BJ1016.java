@@ -11,8 +11,15 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.StringTokenizer;
-
-public class Main{
+/**
+ * 해당 문제는 아리스토테네스의 체를 이용한 문제이다.
+ * 제시된 조건을 보면 min의 값이 엄청 크지만 결국 min과 max 사이에서의 값은 100만 정도이고
+ * 그 100만에 대하여 아리스토테네스의 체를 이용하면 풀 수있는 문제이다.
+ * 단 값의 범위로 인해 모든 변수들을 long으로 해야 한다. 
+ * @author SSAFY
+ *
+ */
+public class BJ1016{
 	public static boolean[] result;
 	
 	public static void main(String[] args) throws IOException {
