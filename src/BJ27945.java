@@ -12,7 +12,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main{
+public class BJ27945{
 	static int findParent(int n) {
 		if(parents[n]==n) {
 			return n;
