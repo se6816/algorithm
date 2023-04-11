@@ -12,7 +12,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main{
+public class BJ1025{
 	public static int[][] list;
 	public static long maxResult;
 	static int N;
