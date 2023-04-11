@@ -13,42 +13,56 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main{
-	public static boolean[] result;
-	
+	public static int[][] list;
+	public static long maxResult;
+	static int N;
+	static int M;
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer stz;
 		StringBuilder sb=new StringBuilder();
 		stz=new StringTokenizer(br.readLine());
-		long min=Long.parseLong(stz.nextToken());
-		long max=Long.parseLong(stz.nextToken());
-		int cnt=0;
-		result=new boolean[1000001];
-		for(long i=2; i<=Math.min(Math.sqrt(Long.MAX_VALUE), Math.sqrt(max));i++) {
-			
-			long multi=i*i;
-			long remain=min%multi;
-			long start=0;
-			if(remain!=0) {
-				start=multi-remain;
-			}
-			while(start>=0 && start<result.length) {
-				result[(int)start]=true;
-				start+=multi;
+		N=Integer.parseInt(stz.nextToken());
+		M=Integer.parseInt(stz.nextToken());
+		maxResult=-1;
+		list=new int[N][M];
+		for (int i = 0; i < N; i++) {
+			String s=br.readLine();
+			for (int j = 0; j < M; j++) {
+				list[i][j]=s.charAt(j)-'0';
 			}
 		}
-		for(int i=0; i<=(max-min);i++) {
-			if(!result[i]) {
-				cnt++;
+		for(int i=0; i<N;i++) {
+			for (int j = 0; j < M; j++) {
+				execute(i,j);				
 			}
 		}
-		System.out.println(cnt);
-		
-		
+		System.out.println(maxResult);
 	}
-	
-	
-
+	private static void execute(int x, int y) {
+		for (int i = -N; i < N; i++) {
+			for (int j = -M; j < M; j++) {
+				if(i==0 && j==0) {
+					continue;
+				}
+				
+				int curX=x;
+				int curY=y;
+				int result=0;
+				
+				while(curX>=0 && curY>=0 && curX<N && curY<M) {
+					result=result*10+list[curX][curY];
+					System.out.println(result);
+					if(Math.sqrt(result)%1==0) {
+						maxResult=Math.max(maxResult, result);
+					}
+					
+					curX+=i;
+					curY+=j;
+				}
+			}
+		}
+	}
 	
 		
 }
