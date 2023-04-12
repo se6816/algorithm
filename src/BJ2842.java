@@ -12,7 +12,12 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main{
+/**
+ * 해당 문제는 모든 고도를 정렬한 뒤  투 포인터를 이용하면서 모든 K가 연결되는 최소의 고도 차를 찾으면 됩니다.
+ * @author SSAFY
+ *
+ */
+public class BJ2842{
 	static class Node implements Comparable<Node>{
 		int x;
 		int y;
