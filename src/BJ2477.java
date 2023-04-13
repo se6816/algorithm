@@ -12,7 +12,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main{
+public class BJ2477{
 	// 동쪽은 1, 서쪽은 2, 남쪽은 3, 북쪽은 4
 	public static int rowMin;
 	public static int rowMax;
