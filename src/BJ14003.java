@@ -6,7 +6,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class Main{
+/**
+ * 해당 문제의 N은 100만이다. 그래서 dp를 이용하여 LIS를 돌리면 시간초과가 난다.
+ * 그래서 해당 문제는 이분탐색을 이용하여 LIS를 진행해야 한다.
+ * 그리고 추가적으로 입력을 좀더 최적화하면 메모리와 시간을 단축시킬 수 있다.
+ * @author SSAFY
+ *
+ */
+public class BJ14003{
 	static int[] number;   // LIS 순서 저장 배열
 	static int[] result;  // LIS 진행 저장 배열
 	static final int MIN=1000_000_001;
