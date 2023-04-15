@@ -8,12 +8,14 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 /**
- * 이 문제는 전형적인 다익스트라 문제이다.
+ * 이 문제는 조합문제이다.
+ * 그러나 N이 최대 100이기 떄문에 재귀를 썼다간 터질 수 있다.
+ * 그리고 값이 long으로도 저장될 수 없어서 BigInteger을 써야한다.
  * 
  * @author user
  *
  */
-public class Main{
+public class BJ2407{
 	static int N;
 	static int M;
 
