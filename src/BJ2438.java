@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
  * @author user
  *
  */
-public class Main{
+public class BJ2438{
 
 	
 	public static void main(String[] args) throws IOException {
