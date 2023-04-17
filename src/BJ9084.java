@@ -8,12 +8,12 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 /**
- * 
+ * 전형적인 DP문제이다.
  * 
  * @author user
  *
  */
-public class Main{
+public class BJ9084{
 
 	
 	public static void main(String[] args) throws IOException {
