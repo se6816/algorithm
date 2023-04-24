@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
  * @author user
  *
  */
-public class Main{
+public class BJ1766{
 	
 	static boolean[] visited; // 방문
 	static int[] degree; // 위상배열
