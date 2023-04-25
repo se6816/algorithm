@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
  * @author user
  *
  */
-public class Main{
+public class BJ2637{
 	static class Node{
 		int targetX;
 		int weight;
