@@ -21,7 +21,7 @@ import java.util.StringTokenizer;
  * @author user
  *
  */
-public class Main{
+public class BJ9470{
 	static class Node{
 		int x;
 		PriorityQueue<Integer> pq=new PriorityQueue<>(Collections.reverseOrder());
