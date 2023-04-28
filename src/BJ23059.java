@@ -21,7 +21,7 @@ import java.util.StringTokenizer;
  * @author user
  *
  */
-public class Main{
+public class BJ23059{
 	static StringBuilder sb;
 	static Map<String, Integer> degree;
 	static Map<String, List<String>> relations;
