@@ -13,15 +13,15 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.StringTokenizer;
 /**
- * 해당 문제는 위상 정렬문제이다. 
- * 그러나 주의할 점이 있다. 연속적으로 정렬이 이루어지면서 하는 것이 아닌
- * 1번째 턴에 선수 아이템 없는 것들끼리 모아서 정렬하여 처리하고
- * 처리가 다 끝나고 2번 째 턴에 선수 아이템이 없는 것들끼리 모아서 처리하는 것을 반복해야 한다. 
+ * 해당 문제는 그리디 문제이다.
+ * 답을 구하는 방식은 map에 특정 알파벳의 자릿수 값을 더하고
+ * 자릿수 값을 다 더한 다음 가장 큰 값을 가진 수부터 9부터 차례대로 배정하고
+ * 그 값을 더한 값을 반환한다. 
  * 
  * @author user
  *
  */
-public class Main{
+public class BJ1339{
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
